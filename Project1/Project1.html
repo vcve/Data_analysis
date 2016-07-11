@@ -11982,8 +11982,8 @@ The null hypothesis(H0) that there are no significate differences between popula
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="n">Cong_Mean</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">mean</span><span class="p">(</span><span class="n">dataFrame</span><span class="p">[</span><span class="s1">&#39;Congruent&#39;</span><span class="p">])</span>
 <span class="n">Inco_Mean</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">mean</span><span class="p">(</span><span class="n">dataFrame</span><span class="p">[</span><span class="s1">&#39;Incongruent&#39;</span><span class="p">])</span>
-<span class="n">Cong_Std</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">std</span><span class="p">(</span><span class="n">dataFrame</span><span class="p">[</span><span class="s1">&#39;Congruent&#39;</span><span class="p">])</span>
-<span class="n">Inco_Std</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">std</span><span class="p">(</span><span class="n">dataFrame</span><span class="p">[</span><span class="s1">&#39;Incongruent&#39;</span><span class="p">])</span>
+<span class="n">Cong_Std</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">std</span><span class="p">(</span><span class="n">dataFrame</span><span class="p">[</span><span class="s1">&#39;Congruent&#39;</span><span class="p">],</span> <span class="n">ddof</span> <span class="o">=</span> <span class="mi">1</span><span class="p">)</span>
+<span class="n">Inco_Std</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">std</span><span class="p">(</span><span class="n">dataFrame</span><span class="p">[</span><span class="s1">&#39;Incongruent&#39;</span><span class="p">],</span> <span class="n">ddof</span> <span class="o">=</span> <span class="mi">1</span><span class="p">)</span>
 <span class="n">Cong_Med</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">median</span><span class="p">(</span><span class="n">dataFrame</span><span class="p">[</span><span class="s1">&#39;Congruent&#39;</span><span class="p">])</span>
 <span class="n">Inco_Med</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">median</span><span class="p">(</span><span class="n">dataFrame</span><span class="p">[</span><span class="s1">&#39;Incongruent&#39;</span><span class="p">])</span>
 </pre></div>
@@ -12032,13 +12032,13 @@ The null hypothesis(H0) that there are no significate differences between popula
       <th>Congruent</th>
       <td>14.051125</td>
       <td>14.3565</td>
-      <td>3.484416</td>
+      <td>3.559358</td>
     </tr>
     <tr>
       <th>Incongruent</th>
       <td>22.015917</td>
       <td>21.0175</td>
-      <td>4.696055</td>
+      <td>4.797057</td>
     </tr>
   </tbody>
 </table>
